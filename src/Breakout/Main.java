@@ -3,20 +3,21 @@ package Breakout;
 import java.awt.*;
 import javax.swing.*;
 
-import static java.awt.BorderLayout.CENTER;
-
 public class Main{
 
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
+
+        // neues Fenster erstellen
         JFrame frame = new JFrame("BREAKOUT");
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
-        frame.setSize(1280, 720);
+        frame.setSize(1280, 720); // Fenstergröße = HD
+        frame.setLocationRelativeTo(null);
 
-        Breakout game = new Breakout() ;
+        Breakout game = new Breakout(1280, 720) ;
 
-
+        frame.add(game, BorderLayout.CENTER);
         frame.setVisible(true);
 }
 
