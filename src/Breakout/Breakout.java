@@ -1,110 +1,120 @@
-package Breakout;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-
-/**
- * Created by Romano on 30.06.2016.
+package Breakout;/**
+ * Created by Romano on 01.07.2016.
  */
-public class Breakout extends JPanel {
 
-    public int width;
-    public int height;
-    private int tickrate = 60;
-    private Ball ball;
-    public Player player;
-    private boolean isRunning = false;
-    private boolean isPaused = false;
+import com.almasb.fxgl.GameApplication;
+import com.almasb.fxgl.GameSettings;
+import com.almasb.fxgl.asset.AssetManager;
+import com.almasb.fxgl.asset.Assets;
+import com.almasb.fxgl.entity.Entity;
+import com.almasb.fxgl.entity.EntityType;
+import com.almasb.fxgl.physics.PhysicsEntity;
+import javafx.scene.input.KeyCode;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import org.jbox2d.dynamics.BodyType;
 
-    private long lastUpdate;
+import static javafx.application.Application.launch;
 
-    public  Breakout(int width, int height){
-        this.width = width;
-        this.height = height;
+public class Breakout extends GameApplication{
 
-        ball = new Ball(this);
-        player = new Player(this);
-        this.setFocusable(true);
-        this.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_SPACE && !isRunning) run();
-                //if (e.getKeyCode() == KeyEvent.VK_ESCAPE) pause();
-                if (e.getKeyCode() == KeyEvent.VK_Q ) quit();
-                if (e.getKeyCode() == KeyEvent.VK_LEFT) player.position.x = player.position.x - 50;
-                if (e.getKeyCode() == KeyEvent.VK_RIGHT)player.position.x =player.position.x + 50;
-            }
+    private Assets assets;
+
+    private PhysicsEntity bat, ball;
+
+    private enum Type implements EntityType{
+        BAT, BALL, BRICK
+    }
+
+    @Override
+    protected void initSettings(GameSettings settings) {
+        settings.setTitle("Breakout");
+        settings.setVersion("dev");
+        settings.setWidth(1280);
+        settings.setHeight(720);
+        settings.setIntroEnabled(false);
+    }
+
+    @Override
+    protected void initInput() {
+        inputManager.addKeyPressBinding(KeyCode.A, () ->{
+            bat.setLinearVelocity(-5,0);
+        });
+
+        inputManager.addKeyPressBinding(KeyCode.D, () -> {
+            bat.setLinearVelocity(5, 0);
         });
     }
 
-    public void run(){
-        thread.start();
+    @Override
+    protected void initAssets() throws Exception {
+        assets = assetManager.cache();
+        assets.logCached();
     }
 
-    public void pause(){
-        isPaused = !isPaused;
+    @Override
+    protected void initGame() {
+
+        physicsManager.setGravity(0,0);
+        initBat();
+        initBall();
+        initBrick() ;
+
     }
 
-    public void quit(){
-        isRunning = false;
+
+
+    @Override
+    protected void initUI(Pane uiRoot) {
+        Text scoreText = new Text();
+        scoreText.setTranslateY(20);
+        scoreText.setTranslateX(5);
+        scoreText.setFont(Font.font(20));
+        scoreText.setText("PUNKTE:");
+
+        uiRoot.getChildren().add(scoreText);
     }
 
-    Thread thread = new Thread(){
-        public void run(){
-            //Init
+    private void initBat() {
+        bat = new PhysicsEntity(Type.BAT);
+        bat.setPosition(getWidth()/2 - 135 / 2, getHeight()- 32);
+        bat.setGraphics(assets.getTexture("Bats/bat_black.png"));
+        bat.setBodyType(BodyType.KINEMATIC);
 
-            isRunning = true;
-            isPaused = false;
-            lastUpdate = System.nanoTime();
-            //Loop
-            while (isRunning){
-                try {
+        addEntities(bat);
 
-                    if (isPaused) {
-                        lastUpdate = System.nanoTime();
-                        Thread.sleep(1 );
+    }
 
-                    } else {
-                        tick();
-                        lastUpdate = System.nanoTime();
-                        Thread.sleep((long)(1000.0/tickrate));
-                    }
+    private void initBall() {
+        ball = new PhysicsEntity(Type.BALL);
+        ball.setPosition(getWidth()/2 - 35 / 2, getHeight()/2 - 35 / 2);
+        ball.setGraphics(assets.getTexture("Balls/ball_red.png"));
+        ball.setBodyType(BodyType.DYNAMIC);
 
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-            //Exit
+        addEntities(ball);
 
+        ball.setLinearVelocity(5,-10 );
+
+    }
+
+    private void initBrick(){
+        for (int i = 0; i < 60; i++){
+            PhysicsEntity brick = new PhysicsEntity(Type.BRICK);
+            brick.setPosition((i % 12) *98, (i / 16)* 45);
+            brick.setGraphics(assets.getTexture("Bricks/brick_blue_small.png"));
+
+
+            addEntities(brick);
         }
-    };
-
-    public void tick(){
-        double deltatime = (System.nanoTime()-lastUpdate)/1000000 ; //in ms
-        ball.tick(deltatime);
-
-        repaint();
     }
 
-    public void paint (Graphics g){
-
-
-        g.translate((getWidth()-width)/2, (getHeight()-height)/2); //Game wird gecentert...optional
-        g.setColor(Color.DARK_GRAY);
-        g.fillRect(0, 0, width, height);
-
-        g.setColor(Color.WHITE);
-
-        if (!isRunning) {
-            g.drawString("Drücke Leertaste, um das Spiel zu starten.", 200, 200);
-        }else if(isPaused){
-            g.drawString("Spiel ist pausiert", 100, 100);
-        }
-
-        g.translate(width/2, height/2);
-        ball.render(g);
-        player.render(g);
+    @Override
+    protected void onUpdate() {
+        bat.setLinearVelocity(0,0);
     }
+    public static void main(String[] args) {
+        launch(args);
+    }
+
 }
