@@ -95,6 +95,7 @@ public class Breakout extends GameApplication{
             @Override
             public void onCollisionBegin(Entity a, Entity b) {
                 //Was passiert wenn der Ball den Boden berührt?
+                score.set(score.get() - 1000);
             }
             @Override
             public void onCollision(Entity a, Entity b) {
