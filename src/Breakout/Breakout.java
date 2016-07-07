@@ -52,11 +52,26 @@ public class Breakout extends GameApplication{
     @Override
     protected void initInput() {
         inputManager.addKeyPressBinding(KeyCode.A, () ->{
-            bat.setLinearVelocity(-5,0);
+            Point2D position;
+            position = bat.getPosition();
+            if(position.getX() < 25 ) {
+                bat.setLinearVelocity(0,0);
+            }
+            else{
+                bat.setLinearVelocity(-5,0);
+            }
+
         });
 
         inputManager.addKeyPressBinding(KeyCode.D, () -> {
-            bat.setLinearVelocity(5, 0);
+            Point2D position;
+            position = bat.getPosition();
+            if(position.getX() > 1125){
+                bat.setLinearVelocity(0,0);
+            }
+            else {
+                bat.setLinearVelocity(5, 0);
+            }
         });
     }
 
