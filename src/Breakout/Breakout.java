@@ -13,9 +13,11 @@ import com.almasb.fxgl.physics.PhysicsEntity;
 import com.almasb.fxgl.physics.PhysicsManager;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
@@ -25,6 +27,7 @@ import org.jbox2d.dynamics.BodyType;
 import org.jbox2d.dynamics.FixtureDef;
 
 import java.awt.*;
+import java.io.IOException;
 
 import static javafx.application.Application.launch;
 
@@ -52,11 +55,26 @@ public class Breakout extends GameApplication{
     @Override
     protected void initInput() {
         inputManager.addKeyPressBinding(KeyCode.A, () ->{
-            bat.setLinearVelocity(-5,0);
+            Point2D position;
+            position = bat.getPosition();
+            if(position.getX() < 25 ) {
+                bat.setLinearVelocity(0,0);
+            }
+            else{
+                bat.setLinearVelocity(-5,0);
+            }
+
         });
 
         inputManager.addKeyPressBinding(KeyCode.D, () -> {
-            bat.setLinearVelocity(5, 0);
+            Point2D position;
+            position = bat.getPosition();
+            if(position.getX() > 1125){
+                bat.setLinearVelocity(0,0);
+            }
+            else {
+                bat.setLinearVelocity(5, 0);
+            }
         });
     }
 
@@ -208,5 +226,5 @@ public class Breakout extends GameApplication{
     public static void main(String[] args) {
         launch(args);
     }
-
+   
 }
