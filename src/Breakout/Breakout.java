@@ -15,7 +15,9 @@ import com.almasb.fxgl.input.ActionType;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.InputMapping;
 import com.almasb.fxgl.input.OnUserAction;
-import com.almasb.fxgl.physics.*;
+import com.almasb.fxgl.physics.CollisionHandler;
+import com.almasb.fxgl.physics.PhysicsComponent;
+import com.almasb.fxgl.physics.PhysicsWorld;
 import com.almasb.fxgl.settings.GameSettings;
 import com.almasb.fxgl.texture.Texture;
 import javafx.beans.property.IntegerProperty;
@@ -25,7 +27,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
-import static com.almasb.fxgl.physics.BoundingShape.box;
+import java.util.ArrayList;
 
 
 public class Breakout extends GameApplication{
@@ -58,6 +60,8 @@ public class Breakout extends GameApplication{
     private Text scoreText;
 
     private BatControl batControl;
+
+    private ArrayList<GameEntity> playField;
 
     private IntegerProperty score = new SimpleIntegerProperty();
     public enum Type {
@@ -119,9 +123,6 @@ public class Breakout extends GameApplication{
     @Override
     protected void initGame() {
 
-        //physicsManager.setGravity(0,0);
-        //WallFactory wall = new WallFactory();
-        //wall.initWalls();
         initWalls();
         initBat();
         initBall();
@@ -138,10 +139,14 @@ public class Breakout extends GameApplication{
         //Kollisionsabfrage zw. Ball und Brick
         PhysicsWorld physics = getPhysicsWorld();
 
-        //physics.setGravity(0,0);
+        physics.setGravity(0,1);
         physics.addCollisionHandler(new CollisionHandler(Type.BALL, Type.BRICK) {
             @Override
             public void onCollisionBegin(Entity a, Entity b) {
+
+                /**Hier wird bei der Kollisionsabfrage mit einem Ziegel die Richtung des Balls umgedreht
+                Das klappt weitestgehend auch, jedoch wird diese Prozedur oftmals doppelt durchgeführt,
+                weshalb der Ball dann einfach weiter fliegt**/
 
                 Point2D v = BallFactory.ballPhysics.getLinearVelocity();
                 double x = - v.getX();
@@ -165,8 +170,14 @@ public class Breakout extends GameApplication{
             @Override
             public void onCollisionBegin(Entity a, Entity b) {
                 //Was passiert wenn der Ball den Boden berührt?
+                /**Diese Prozedur wird nur sporadisch ausgeführt. Das hängt damit zusammen,
+                 * dass die Wände keine gescheite HitBox haben, zumindest prahlt der Ball nicht ab.
+                 * Daher musste ich extra eine Bildschirmbegrenzung anfügen.
+                 **/
+
                 score.set(score.get() - 1000);
                 a.removeFromWorld();
+                initBall();
             }
             @Override
             public void onCollision(Entity a, Entity b) {
@@ -252,21 +263,17 @@ public class Breakout extends GameApplication{
 
     private void initBrick() {
 
-        BoundingShape Box = box(92, 42);
+        PlayField pf = new PlayField();
 
-        for (int i = 0; i < 60; i++) {
+        playField = new ArrayList<GameEntity>();
+        playField = pf.getPlayField();
 
-            GameEntity brick = new GameEntity();
-            brick.getTypeComponent().setValue(Type.BRICK);
-            brick.getPositionComponent().setValue((i % 11) *100 + 95, (i / 16)* 45 + 30);
-            //brick.getPositionComponent().setValue(getWidth() / 2, 100);
-            brick.getMainViewComponent().setTexture("Bricks/brick_blue_small.png", true);
-            brick.getBoundingBoxComponent().addHitBox(new HitBox("BrickHitBox", Box));
-            brick.addComponent(new CollidableComponent(true));
+        for(int i = 0; i < 12; i++) {
 
-            getGameWorld().addEntities(brick);
-
+            getGameWorld().addEntities(playField.get(i));
         }
+
+        playField.clear();
     }
 
     private void initScreenBounds() {
