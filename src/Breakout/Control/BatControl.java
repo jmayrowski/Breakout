@@ -1,4 +1,4 @@
-package Breakout;
+package Breakout.Control;
 
 import com.almasb.ents.AbstractControl;
 import com.almasb.ents.Entity;
