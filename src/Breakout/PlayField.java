@@ -28,7 +28,7 @@ public class PlayField {
 
         BrickFactory bf = new BrickFactory();
 
-        brick0 = bf.initBrick(0,0);
+        brick0 = bf.initBrick(0,7);
         brick1 = bf.initBrick(1,1);
         brick2 = bf.initBrick(2,0);
         brick3 = bf.initBrick(3,0);
@@ -38,8 +38,8 @@ public class PlayField {
         brick7 = bf.initBrick(7,0);
         brick8 = bf.initBrick(8,0);
         brick9 = bf.initBrick(9,0);
-        brick10 = bf.initBrick(16,4);
-        brick11 = bf.initBrick(17,2);
+        brick10 = bf.initBrick(12,5);
+        brick11 = bf.initBrick(13,3);
 
 
         ArrayList<GameEntity> playField = new ArrayList<GameEntity>();

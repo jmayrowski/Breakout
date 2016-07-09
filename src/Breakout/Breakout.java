@@ -128,7 +128,7 @@ public class Breakout extends GameApplication{
         initBall();
         initBrick();
         initBackground();
-        initScreenBounds();
+        //initScreenBounds();
 
 
 
