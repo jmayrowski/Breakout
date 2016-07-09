@@ -1,0 +1,1165 @@
+00:43:54.311 [JavaFX App] DEBUG FXGLLoggerFactory    - Service [LoggerFactory] initialized
+00:43:54.341 [JavaFX App] DEBUG GameApplication      - Starting Game Application
+00:43:54.343 [JavaFX App] DEBUG FXGLEventBus         - Service [EventBus] initialized
+00:43:54.346 [JavaFX App] DEBUG FXGLExecutor         - Service [Executor] initialized
+00:43:54.348 [JavaFX App] DEBUG GameWorld            - Game world initialized
+00:43:54.380 [JavaFX App] DEBUG PhysicsWorld         - Physics world initialized
+00:43:54.395 [JavaFX App] DEBUG GameScene            - Game scene initialized: 1280.0x720.0
+00:43:54.420 [JavaFX App] DEBUG AssetLoader          - Service [AssetLoader] initialized
+00:43:54.421 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/system/notification.wav
+00:43:54.437 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/select.wav
+00:43:54.438 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/back.wav
+00:43:54.439 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/press.wav
+00:43:54.441 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+00:43:54.540 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl.css
+00:43:54.540 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/icons/fxgl_icon.png
+00:43:54.574 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+00:43:54.587 [JavaFX App] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 1280.0] x DoubleProperty [value: 720.0] @ 1.0
+00:43:54.587 [JavaFX App] DEBUG FXGLDisplay          - New size:    1280.0 x 720.0 @ DoubleProperty [value: 1.0]
+00:43:54.588 [JavaFX App] DEBUG FXGLDisplay          - Service [Display] initialized
+00:43:54.588 [JavaFX App] DEBUG FXGLDisplay          - Using CSS: CSS(externalForm=jar:file:/C:/Users/Romano/Documents/GitHub/Breakout/src/lib/FXGL-0.2.4-uber.jar!/assets/ui/css/fxgl_dark.css)
+00:43:54.591 [JavaFX App] DEBUG FXGLInput            - Service [Input] initialized
+00:43:54.591 [JavaFX App] DEBUG FXGLInput            - Registered new binding: Screenshot - P
+00:43:54.591 [JavaFX App] DEBUG FXGLInput            - Registered new binding: Developer Options - CTRL+0
+00:43:54.594 [JavaFX App] DEBUG FXGLInput            - Registered new binding: left - A
+00:43:54.594 [JavaFX App] DEBUG FXGLInput            - Registered new binding: right - D
+00:43:54.594 [JavaFX App] DEBUG GameApplication      - Initializing global event handlers
+00:43:54.595 [JavaFX App] DEBUG FXGLMasterTimer      - Service [MasterTimer] initialized
+00:43:54.601 [JavaFX App] DEBUG FXGLEventBus         - Firing event: SaveEvent
+00:43:54.602 [JavaFX App] DEBUG FXGLInput            - Saving data to profile
+00:43:54.603 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+00:43:54.604 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+00:43:54.604 [JavaFX App] DEBUG Bundle               - input.right=D
+00:43:54.604 [JavaFX App] DEBUG Bundle               - input.Developer Options=CTRL+0
+00:43:54.604 [JavaFX App] DEBUG Bundle               - input.left=A
+00:43:54.604 [JavaFX App] DEBUG FXGLDisplay          - Saving data to profile
+00:43:54.604 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+00:43:54.604 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+00:43:54.604 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+00:43:54.605 [JavaFX App] DEBUG FXGLAudioPlayer      - Service [AudioPlayer] initialized
+00:43:54.605 [JavaFX App] DEBUG FXGLAudioPlayer      - Saving data to profile
+00:43:54.605 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+00:43:54.605 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+00:43:54.605 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+00:43:54.605 [JavaFX App] DEBUG AchievementManager   - Service [AchievementManager] initialized
+00:43:54.605 [JavaFX App] DEBUG AchievementManager   - Saving data to profile
+00:43:54.606 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+00:43:54.606 [JavaFX App] DEBUG FXGLMasterTimer      - Saving data to profile
+00:43:54.606 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+00:43:54.606 [JavaFX App] DEBUG Bundle               - timer.playtime=0
+00:43:54.637 [JavaFX App] DEBUG GameApplication      - State: STARTUP -> MAIN_MENU
+00:43:54.755 [JavaFX App] DEBUG FXGLDisplay          - Showing stage
+00:43:54.755 [JavaFX App] DEBUG FXGLDisplay          - Root size: 1280.0x720.0
+00:43:54.755 [JavaFX App] DEBUG FXGLDisplay          - Scene size: 1280.0x720.0
+00:43:54.755 [JavaFX App] DEBUG FXGLDisplay          - Stage size: 1296.0x758.0
+00:43:54.821 [JavaFX App] DEBUG SaveLoadManager      - Checking profiles dir: profiles/
+00:43:54.822 [JavaFX App] DEBUG SaveLoadManager      - Loading profile names
+00:43:54.824 [JavaFX App] DEBUG IOTask               - Showing dialog
+00:43:54.833 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+00:43:54.833 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:54.835 [pool-3-thr] DEBUG IOTask               - Executing task: loadDirectoryNamesTask(./profiles/, false)
+00:43:54.914 [JavaFX App] DEBUG IOTask               - succeed(): Dismissing dialog
+00:43:54.915 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+00:43:54.915 [JavaFX App] DEBUG IOTask               - Task succeeded: loadDirectoryNamesTask(./profiles/, false)
+00:43:54.922 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+00:43:54.922 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:55.705 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+00:43:55.705 [JavaFX App] DEBUG SaveLoadManager      - Loading profile: TestProfil
+00:43:55.706 [JavaFX App] DEBUG IOTask               - Showing dialog
+00:43:55.711 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+00:43:55.711 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:55.713 [pool-3-thr] DEBUG IOTask               - Executing task: readDataTask(./profiles/TestProfil/user.profile)
+00:43:55.715 [pool-3-thr] DEBUG FS                   - Reading from: .\profiles\TestProfil\user.profile
+00:43:55.723 [JavaFX App] DEBUG IOTask               - succeed(): Dismissing dialog
+00:43:55.724 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+00:43:55.724 [JavaFX App] DEBUG IOTask               - Task succeeded: readDataTask(./profiles/TestProfil/user.profile)
+00:43:55.724 [JavaFX App] DEBUG FXGLEventBus         - Firing event: LoadEvent[type=LOAD_PROFILE]
+00:43:55.724 [JavaFX App] DEBUG FXGLInput            - Loading data from profile
+00:43:55.724 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+00:43:55.724 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+00:43:55.724 [JavaFX App] DEBUG Bundle               - input.right=D
+00:43:55.724 [JavaFX App] DEBUG Bundle               - input.Developer Options=0
+00:43:55.724 [JavaFX App] DEBUG Bundle               - input.left=A
+00:43:55.724 [JavaFX App] DEBUG FXGLDisplay          - Loading data from profile
+00:43:55.724 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+00:43:55.724 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+00:43:55.724 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+00:43:55.724 [JavaFX App] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 1280.0] x DoubleProperty [value: 720.0] @ 1.0
+00:43:55.724 [JavaFX App] DEBUG FXGLDisplay          - New size:    1280.0 x 720.0 @ DoubleProperty [value: 1.0]
+00:43:55.735 [JavaFX App] DEBUG FXGLAudioPlayer      - Loading data from profile
+00:43:55.736 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+00:43:55.736 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+00:43:55.736 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+00:43:55.736 [JavaFX App] DEBUG AchievementManager   - Loading data from profile
+00:43:55.736 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+00:43:55.736 [JavaFX App] DEBUG FXGLMasterTimer      - Loading data from profile
+00:43:55.736 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+00:43:55.736 [JavaFX App] DEBUG Bundle               - timer.playtime=573048501897
+00:43:55.736 [JavaFX App] DEBUG SaveLoadManager      - Loading last modified save file
+00:43:55.736 [JavaFX App] DEBUG SaveLoadManager      - Loading save files
+00:43:55.738 [JavaFX App] DEBUG IOTask               - Showing dialog
+00:43:55.744 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+00:43:55.744 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:55.744 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/TestProfil/saves/, true, [FileExtension(extension=.sav)])
+00:43:55.744 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/TestProfil/saves/, true, [FileExtension(extension=.sav)])
+00:43:55.745 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/TestProfil/saves/, true, [FileExtension(extension=.sav)])
+00:43:55.746 [pool-3-thr] DEBUG IOTask               - Executing task: readSaveFiles
+00:43:55.747 [pool-3-thr] DEBUG IOTask               - Executing task: findLastSave
+00:43:55.758 [JavaFX App] DEBUG IOTask               - fail(): Dismissing dialog
+00:43:55.758 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+00:43:55.758 [JavaFX App] WARN  IOTask               - Task failed: loadFileNamesTask(./profiles/TestProfil/saves/, true, [FileExtension(extension=.sav)]) Error: java.io.FileNotFoundException: No save files found
+00:43:55.758 [JavaFX App] DEBUG FXGLEventBus         - Firing event: ProfileSelectedEvent[name=TestProfil,hasSaves=false]
+00:43:56.321 [JavaFX App] DEBUG Menu                 - fireNewGame()
+00:43:56.321 [JavaFX App] DEBUG GameApplication      - Starting new game
+00:43:56.324 [JavaFX App] DEBUG GameApplication      - Initializing App
+00:43:56.325 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=PAUSE]
+00:43:56.326 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:56.327 [JavaFX App] DEBUG FXGLMasterTimer      - Stopping master timer
+00:43:56.327 [JavaFX App] DEBUG GameApplication      - State: MAIN_MENU -> PAUSED
+00:43:56.328 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESET]
+00:43:56.328 [JavaFX App] DEBUG GameWorld            - Resetting game world
+00:43:56.328 [JavaFX App] TRACE EntityWorld          - Resetting entity world
+00:43:56.332 [JavaFX App] DEBUG GameScene            - Resetting game scene
+00:43:56.332 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:56.332 [JavaFX App] DEBUG FXGLMasterTimer      - Resetting ticks and clearing all actions
+00:43:56.333 [JavaFX App] DEBUG GameApplication      - State: PAUSED -> LOADING
+00:43:56.343 [JavaFX App] DEBUG GameApplication      - Starting FXGL Init Thread
+00:43:56.344 [JavaFX App] DEBUG FXGLEventBus         - Firing event: MenuEvent[type=NEW_GAME]
+00:43:56.344 [FXGL Init ] DEBUG InitAppTask          - Initializing Assets
+00:43:56.345 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Balls/ball_red.png
+00:43:56.351 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bats/bat_black.png
+00:43:56.353 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.354 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Walls/brick_red.png
+00:43:56.355 [FXGL Init ] DEBUG InitAppTask          - Initializing Game
+00:43:56.393 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.395 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.395 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.395 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.396 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.396 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.396 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.397 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.398 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.398 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.398 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.399 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.399 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.399 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.400 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.400 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.400 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.401 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.401 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.401 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.402 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.402 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.402 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.403 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.403 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.404 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.404 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.405 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.405 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.405 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.406 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.406 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.406 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.407 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.407 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.407 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.408 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.408 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.409 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.409 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.409 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.410 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.410 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.410 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.411 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.411 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.411 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.412 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.412 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.412 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.413 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.413 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.413 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.414 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.414 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.414 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.415 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.415 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.415 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.415 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.416 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.416 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.416 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.417 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.417 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.417 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.418 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.418 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.418 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.418 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.419 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.419 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.419 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.419 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.420 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.420 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.420 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.420 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.421 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.421 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.421 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.421 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.422 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.422 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.422 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.422 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.423 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.423 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.423 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.423 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.424 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.424 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.424 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.424 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.425 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.425 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.425 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.425 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.426 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.426 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.426 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.426 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.426 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.427 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.427 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.427 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.427 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.428 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.428 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.428 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.428 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.428 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.429 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.429 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.429 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.429 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.430 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.430 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.430 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.430 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.430 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.431 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.431 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.431 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.431 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.432 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.432 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.432 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.432 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.432 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.433 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.433 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.433 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.433 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.434 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.434 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.434 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.434 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.434 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.435 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.435 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.435 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.435 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.435 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.436 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.436 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.436 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.436 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.436 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.437 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.437 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.437 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.437 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.437 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.438 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.438 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.438 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.438 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.438 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.439 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.440 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.440 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.440 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.440 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.440 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.441 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.441 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.441 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.441 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.441 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.442 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.442 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.442 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.442 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.442 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Walls/brick_red.png
+00:43:56.443 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bats/bat_black.png
+00:43:56.446 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Balls/ball_red.png
+00:43:56.448 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.448 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bricks/brick_blue_small_cracked.png
+00:43:56.449 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.449 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.450 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.450 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.450 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.450 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.450 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.451 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.451 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+00:43:56.451 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bricks/brick_green_small.png
+00:43:56.452 [FXGL Init ] DEBUG InitAppTask          - Initializing Physics
+00:43:56.453 [FXGL Init ] DEBUG InitAppTask          - Initializing UI
+00:43:56.454 [FXGL Init ] DEBUG GameScene            - Adding UI node: Text[text="0", x=0.0, y=0.0, alignment=LEFT, origin=BASELINE, boundsType=LOGICAL, font=Font[name=System Regular, family=System, style=Regular, size=20.0], fontSmoothingType=GRAY, fill=0x000000ff]
+00:43:56.454 [FXGL Init ] DEBUG InitAppTask          - Initialization Complete
+00:43:56.454 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=INIT_APP_COMPLETE]
+00:43:56.455 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESUME]
+00:43:56.455 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:43:56.455 [JavaFX App] DEBUG FXGLMasterTimer      - Starting master timer
+00:43:56.455 [JavaFX App] DEBUG GameApplication      - State: LOADING -> PLAYING
+00:43:56.458 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.459 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.459 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.461 [JavaFX App] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+00:43:56.463 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.463 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.463 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.463 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.463 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.463 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.463 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.464 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.464 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.464 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.464 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.464 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.464 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.464 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.464 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.464 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.464 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.465 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.465 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.465 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.465 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.465 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.465 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.465 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.465 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.465 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.465 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.465 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.466 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.466 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.466 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.466 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.466 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.466 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.466 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.466 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.466 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.466 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.467 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.467 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.467 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.467 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.467 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.467 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.467 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.468 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.468 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.468 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.469 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.469 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.469 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.470 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.470 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.470 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.471 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.471 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.471 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.471 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.471 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.471 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.471 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.472 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.472 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.472 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.473 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.473 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.473 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.474 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.474 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.474 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.474 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.474 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.474 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.474 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.474 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.474 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.475 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.475 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.475 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.475 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.475 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.475 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.475 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.475 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.475 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.476 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.476 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.476 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.477 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.477 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.477 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.477 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.477 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.477 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.477 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.477 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.477 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.477 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.477 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.478 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.478 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.478 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.479 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.479 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.479 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.480 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.480 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.480 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.481 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.481 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.481 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.482 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.482 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.482 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.483 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.483 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.483 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.484 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.484 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.484 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.485 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.485 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.485 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.485 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.485 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.485 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.485 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.485 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.485 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.485 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.486 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.486 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.486 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.487 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.487 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.487 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.488 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.488 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.488 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.489 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.489 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.489 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.490 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.490 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.490 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.491 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.491 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.491 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.534 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.534 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.534 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.534 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.534 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.534 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.535 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.535 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.535 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.535 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.535 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.535 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.535 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.535 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.535 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.536 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.536 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.536 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.536 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.536 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.536 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.536 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.536 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.536 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.537 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.537 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.537 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.537 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.537 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.537 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.537 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.539 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.540 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.540 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.540 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+00:43:56.540 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:56.540 [JavaFX App] TRACE Entity               - Initializing entity
+00:43:56.540 [JavaFX App] DEBUG GameScene            - Entity added to scene
+00:43:56.540 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+00:43:59.658 [JavaFX App] DEBUG GameScene            - Entity removed from scene
+00:43:59.658 [JavaFX App] DEBUG GameScene            - Removed MainViewComponent
+00:43:59.660 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_REMOVED]
+00:43:59.660 [JavaFX App] TRACE Entity               - Cleaning entity
+00:43:59.660 [JavaFX App] TRACE Entity               - Removing all controls
+00:43:59.661 [JavaFX App] TRACE Entity               - Removing all components
+00:44:00.887 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+00:44:00.887 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=PAUSE]
+00:44:00.887 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:44:00.887 [JavaFX App] DEBUG FXGLMasterTimer      - Stopping master timer
+00:44:00.887 [JavaFX App] DEBUG GameApplication      - State: PLAYING -> PAUSED
+00:44:00.887 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:44:02.048 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+00:44:02.048 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESUME]
+00:44:02.049 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+00:44:02.049 [JavaFX App] DEBUG FXGLMasterTimer      - Starting master timer
+00:44:02.049 [JavaFX App] DEBUG GameApplication      - State: PAUSED -> PLAYING
+00:44:02.049 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=CLOSE_REQUEST]
+00:44:02.049 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=EXIT]
+00:44:02.050 [JavaFX App] DEBUG FXGLEventBus         - Firing event: SaveEvent
+00:44:02.050 [JavaFX App] DEBUG FXGLInput            - Saving data to profile
+00:44:02.050 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+00:44:02.050 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+00:44:02.050 [JavaFX App] DEBUG Bundle               - input.right=D
+00:44:02.050 [JavaFX App] DEBUG Bundle               - input.Developer Options=0
+00:44:02.050 [JavaFX App] DEBUG Bundle               - input.left=A
+00:44:02.050 [JavaFX App] DEBUG FXGLDisplay          - Saving data to profile
+00:44:02.050 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+00:44:02.050 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+00:44:02.050 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+00:44:02.050 [JavaFX App] DEBUG FXGLAudioPlayer      - Saving data to profile
+00:44:02.050 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+00:44:02.051 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+00:44:02.051 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+00:44:02.051 [JavaFX App] DEBUG AchievementManager   - Saving data to profile
+00:44:02.051 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+00:44:02.051 [JavaFX App] DEBUG FXGLMasterTimer      - Saving data to profile
+00:44:02.051 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+00:44:02.051 [JavaFX App] DEBUG Bundle               - timer.playtime=577123866371
+00:44:02.052 [JavaFX App] DEBUG SaveLoadManager      - Saving profile: TestProfil
+00:44:02.055 [JavaFX App] DEBUG IOTask               - Executing task: writeDataTask(./profiles/TestProfil/user.profile)
+00:44:02.055 [JavaFX App] DEBUG IOTask               - Executing task: writeDataTask(./profiles/TestProfil/user.profile)
+00:44:02.059 [JavaFX App] DEBUG FS                   - Writing to: .\profiles\TestProfil\user.profile
+00:44:02.069 [JavaFX App] DEBUG IOTask               - Executing task: checkSavesDir(./profiles/TestProfil/saves/)
+00:44:02.069 [JavaFX App] DEBUG IOTask               - Task succeeded: writeDataTask(./profiles/TestProfil/user.profile)
