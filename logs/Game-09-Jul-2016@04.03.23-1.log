@@ -1,0 +1,256 @@
+04:02:45.852 [JavaFX App] DEBUG FXGLLoggerFactory    - Service [LoggerFactory] initialized
+04:02:45.856 [JavaFX App] DEBUG GameApplication      - Starting Game Application
+04:02:45.857 [JavaFX App] DEBUG FXGLEventBus         - Service [EventBus] initialized
+04:02:45.860 [JavaFX App] DEBUG FXGLExecutor         - Service [Executor] initialized
+04:02:45.862 [JavaFX App] DEBUG GameWorld            - Game world initialized
+04:02:45.895 [JavaFX App] DEBUG PhysicsWorld         - Physics world initialized
+04:02:45.909 [JavaFX App] DEBUG GameScene            - Game scene initialized: 1280.0x720.0
+04:02:45.935 [JavaFX App] DEBUG AssetLoader          - Service [AssetLoader] initialized
+04:02:45.936 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/system/notification.wav
+04:02:45.953 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/select.wav
+04:02:45.954 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/back.wav
+04:02:45.955 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/press.wav
+04:02:45.957 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/Copperplate_Gothic_Light_Regular.ttf
+04:02:46.048 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl.css
+04:02:46.048 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/icons/fxgl_icon.png
+04:02:46.079 [JavaFX App] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+04:02:46.092 [JavaFX App] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 1280.0] x DoubleProperty [value: 720.0] @ 1.0
+04:02:46.092 [JavaFX App] DEBUG FXGLDisplay          - New size:    1280.0 x 720.0 @ DoubleProperty [value: 1.0]
+04:02:46.092 [JavaFX App] DEBUG FXGLDisplay          - Service [Display] initialized
+04:02:46.092 [JavaFX App] DEBUG FXGLDisplay          - Using CSS: CSS(externalForm=jar:file:/C:/Users/Romano/Documents/GitHub/Breakout/src/lib/FXGL-0.2.4-uber.jar!/assets/ui/css/fxgl_dark.css)
+04:02:46.095 [JavaFX App] DEBUG FXGLInput            - Service [Input] initialized
+04:02:46.095 [JavaFX App] DEBUG FXGLInput            - Registered new binding: Screenshot - P
+04:02:46.095 [JavaFX App] DEBUG FXGLInput            - Registered new binding: Developer Options - CTRL+0
+04:02:46.097 [JavaFX App] DEBUG FXGLInput            - Registered new binding: left - A
+04:02:46.097 [JavaFX App] DEBUG FXGLInput            - Registered new binding: right - D
+04:02:46.097 [JavaFX App] DEBUG GameApplication      - Initializing global event handlers
+04:02:46.098 [JavaFX App] DEBUG FXGLMasterTimer      - Service [MasterTimer] initialized
+04:02:46.104 [JavaFX App] DEBUG FXGLEventBus         - Firing event: SaveEvent
+04:02:46.105 [JavaFX App] DEBUG FXGLInput            - Saving data to profile
+04:02:46.106 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+04:02:46.106 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+04:02:46.106 [JavaFX App] DEBUG Bundle               - input.right=D
+04:02:46.106 [JavaFX App] DEBUG Bundle               - input.Developer Options=CTRL+0
+04:02:46.106 [JavaFX App] DEBUG Bundle               - input.left=A
+04:02:46.106 [JavaFX App] DEBUG FXGLDisplay          - Saving data to profile
+04:02:46.106 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+04:02:46.106 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+04:02:46.106 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+04:02:46.107 [JavaFX App] DEBUG FXGLAudioPlayer      - Service [AudioPlayer] initialized
+04:02:46.107 [JavaFX App] DEBUG FXGLAudioPlayer      - Saving data to profile
+04:02:46.107 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+04:02:46.107 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+04:02:46.107 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+04:02:46.108 [JavaFX App] DEBUG AchievementManager   - Service [AchievementManager] initialized
+04:02:46.108 [JavaFX App] DEBUG AchievementManager   - Saving data to profile
+04:02:46.108 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+04:02:46.108 [JavaFX App] DEBUG FXGLMasterTimer      - Saving data to profile
+04:02:46.108 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+04:02:46.108 [JavaFX App] DEBUG Bundle               - timer.playtime=0
+04:02:46.138 [JavaFX App] DEBUG GameApplication      - State: STARTUP -> MAIN_MENU
+04:02:46.265 [JavaFX App] DEBUG FXGLDisplay          - Showing stage
+04:02:46.265 [JavaFX App] DEBUG FXGLDisplay          - Root size: 1280.0x720.0
+04:02:46.265 [JavaFX App] DEBUG FXGLDisplay          - Scene size: 1280.0x720.0
+04:02:46.266 [JavaFX App] DEBUG FXGLDisplay          - Stage size: 1296.0x758.0
+04:02:46.336 [JavaFX App] DEBUG SaveLoadManager      - Checking profiles dir: profiles/
+04:02:46.336 [JavaFX App] DEBUG SaveLoadManager      - Loading profile names
+04:02:46.339 [JavaFX App] DEBUG IOTask               - Showing dialog
+04:02:46.344 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+04:02:46.345 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:46.349 [pool-3-thr] DEBUG IOTask               - Executing task: loadDirectoryNamesTask(./profiles/, false)
+04:02:46.435 [JavaFX App] DEBUG IOTask               - succeed(): Dismissing dialog
+04:02:46.436 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+04:02:46.436 [JavaFX App] DEBUG IOTask               - Task succeeded: loadDirectoryNamesTask(./profiles/, false)
+04:02:46.448 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+04:02:46.448 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.330 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+04:02:47.331 [JavaFX App] DEBUG SaveLoadManager      - Loading profile: 1
+04:02:47.334 [JavaFX App] DEBUG IOTask               - Showing dialog
+04:02:47.344 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+04:02:47.344 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.345 [pool-3-thr] DEBUG IOTask               - Executing task: readDataTask(./profiles/1/user.profile)
+04:02:47.349 [pool-3-thr] DEBUG FS                   - Reading from: .\profiles\1\user.profile
+04:02:47.379 [JavaFX App] DEBUG IOTask               - succeed(): Dismissing dialog
+04:02:47.382 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+04:02:47.382 [JavaFX App] DEBUG IOTask               - Task succeeded: readDataTask(./profiles/1/user.profile)
+04:02:47.382 [JavaFX App] DEBUG FXGLEventBus         - Firing event: LoadEvent[type=LOAD_PROFILE]
+04:02:47.382 [JavaFX App] DEBUG FXGLInput            - Loading data from profile
+04:02:47.382 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+04:02:47.382 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+04:02:47.382 [JavaFX App] DEBUG Bundle               - input.right=D
+04:02:47.382 [JavaFX App] DEBUG Bundle               - input.Developer Options=0
+04:02:47.383 [JavaFX App] DEBUG Bundle               - input.left=A
+04:02:47.383 [JavaFX App] DEBUG FXGLDisplay          - Loading data from profile
+04:02:47.383 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+04:02:47.383 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+04:02:47.383 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+04:02:47.383 [JavaFX App] DEBUG FXGLDisplay          - Target size: DoubleProperty [value: 1280.0] x DoubleProperty [value: 720.0] @ 1.0
+04:02:47.383 [JavaFX App] DEBUG FXGLDisplay          - New size:    1280.0 x 720.0 @ DoubleProperty [value: 1.0]
+04:02:47.391 [JavaFX App] DEBUG FXGLAudioPlayer      - Loading data from profile
+04:02:47.391 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+04:02:47.391 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+04:02:47.391 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+04:02:47.391 [JavaFX App] DEBUG AchievementManager   - Loading data from profile
+04:02:47.391 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+04:02:47.391 [JavaFX App] DEBUG FXGLMasterTimer      - Loading data from profile
+04:02:47.391 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+04:02:47.391 [JavaFX App] DEBUG Bundle               - timer.playtime=370067704255
+04:02:47.391 [JavaFX App] DEBUG SaveLoadManager      - Loading last modified save file
+04:02:47.392 [JavaFX App] DEBUG SaveLoadManager      - Loading save files
+04:02:47.394 [JavaFX App] DEBUG IOTask               - Showing dialog
+04:02:47.403 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+04:02:47.403 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.404 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/1/saves/, true, [FileExtension(extension=.sav)])
+04:02:47.404 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/1/saves/, true, [FileExtension(extension=.sav)])
+04:02:47.404 [pool-3-thr] DEBUG IOTask               - Executing task: loadFileNamesTask(./profiles/1/saves/, true, [FileExtension(extension=.sav)])
+04:02:47.406 [pool-3-thr] DEBUG IOTask               - Executing task: readSaveFiles
+04:02:47.407 [pool-3-thr] DEBUG IOTask               - Executing task: findLastSave
+04:02:47.440 [JavaFX App] DEBUG IOTask               - fail(): Dismissing dialog
+04:02:47.440 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+04:02:47.441 [JavaFX App] WARN  IOTask               - Task failed: loadFileNamesTask(./profiles/1/saves/, true, [FileExtension(extension=.sav)]) Error: java.io.FileNotFoundException: No save files found
+04:02:47.441 [JavaFX App] DEBUG FXGLEventBus         - Firing event: ProfileSelectedEvent[name=1,hasSaves=false]
+04:02:47.887 [JavaFX App] DEBUG Menu                 - fireNewGame()
+04:02:47.887 [JavaFX App] DEBUG GameApplication      - Starting new game
+04:02:47.888 [JavaFX App] DEBUG GameApplication      - Initializing App
+04:02:47.889 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=PAUSE]
+04:02:47.889 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.889 [JavaFX App] DEBUG FXGLMasterTimer      - Stopping master timer
+04:02:47.889 [JavaFX App] DEBUG GameApplication      - State: MAIN_MENU -> PAUSED
+04:02:47.889 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESET]
+04:02:47.889 [JavaFX App] DEBUG GameWorld            - Resetting game world
+04:02:47.889 [JavaFX App] TRACE EntityWorld          - Resetting entity world
+04:02:47.890 [JavaFX App] DEBUG GameScene            - Resetting game scene
+04:02:47.890 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.890 [JavaFX App] DEBUG FXGLMasterTimer      - Resetting ticks and clearing all actions
+04:02:47.890 [JavaFX App] DEBUG GameApplication      - State: PAUSED -> LOADING
+04:02:47.894 [JavaFX App] DEBUG GameApplication      - Starting FXGL Init Thread
+04:02:47.894 [JavaFX App] DEBUG FXGLEventBus         - Firing event: MenuEvent[type=NEW_GAME]
+04:02:47.894 [FXGL Init ] DEBUG InitAppTask          - Initializing Assets
+04:02:47.895 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Balls/ball_red.png
+04:02:47.897 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bats/bat_black.png
+04:02:47.898 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.899 [FXGL Init ] DEBUG AssetLoader          - Loading from disk: /assets/textures/Walls/brick_red.png
+04:02:47.899 [FXGL Init ] DEBUG InitAppTask          - Initializing Game
+04:02:47.911 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bats/bat_black.png
+04:02:47.917 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Balls/ball_red.png
+04:02:47.917 [FXGL Init ] TRACE Entity               - Setting controls enabled to: true
+04:02:47.918 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.918 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.919 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.920 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.920 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.921 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.921 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.922 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.922 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.922 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.923 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.923 [FXGL Init ] DEBUG AssetLoader          - Loading from cache: /assets/textures/Bricks/brick_blue_small.png
+04:02:47.923 [FXGL Init ] DEBUG InitAppTask          - Initializing Physics
+04:02:47.924 [FXGL Init ] DEBUG InitAppTask          - Initializing UI
+04:02:47.925 [FXGL Init ] DEBUG GameScene            - Adding UI node: Text[text="0", x=0.0, y=0.0, alignment=LEFT, origin=BASELINE, boundsType=LOGICAL, font=Font[name=System Regular, family=System, style=Regular, size=20.0], fontSmoothingType=GRAY, fill=0x000000ff]
+04:02:47.925 [FXGL Init ] DEBUG InitAppTask          - Initialization Complete
+04:02:47.925 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=INIT_APP_COMPLETE]
+04:02:47.926 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESUME]
+04:02:47.926 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:47.926 [JavaFX App] DEBUG FXGLMasterTimer      - Starting master timer
+04:02:47.926 [JavaFX App] DEBUG GameApplication      - State: LOADING -> PLAYING
+04:02:47.935 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.977 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.977 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.979 [JavaFX App] DEBUG GameScene            - Creating render group for layer: TOP(2147483647)
+04:02:47.985 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.985 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.985 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.985 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.986 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.986 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.986 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.986 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.986 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.986 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.986 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.986 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.987 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.987 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.987 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.987 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.987 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.987 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.987 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.987 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.987 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.987 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.987 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.988 [JavaFX App] DEBUG GameScene            - Added MainViewComponent
+04:02:47.988 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:47.988 [JavaFX App] TRACE Entity               - Initializing entity
+04:02:47.989 [JavaFX App] DEBUG GameScene            - Entity added to scene
+04:02:47.989 [JavaFX App] DEBUG FXGLEventBus         - Firing event: WorldEvent[type=ENTITY_ADDED]
+04:02:49.536 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_OPENED]
+04:02:49.537 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=PAUSE]
+04:02:49.538 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:49.538 [JavaFX App] DEBUG FXGLMasterTimer      - Stopping master timer
+04:02:49.538 [JavaFX App] DEBUG GameApplication      - State: PLAYING -> PAUSED
+04:02:49.538 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:50.528 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=DIALOG_CLOSED]
+04:02:50.529 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=RESUME]
+04:02:50.529 [JavaFX App] DEBUG FXGLInput            - Clearing active input actions
+04:02:50.529 [JavaFX App] DEBUG FXGLMasterTimer      - Starting master timer
+04:02:50.529 [JavaFX App] DEBUG GameApplication      - State: PAUSED -> PLAYING
+04:02:50.529 [JavaFX App] DEBUG FXGLEventBus         - Firing event: DisplayEvent[type=CLOSE_REQUEST]
+04:02:50.530 [JavaFX App] DEBUG FXGLEventBus         - Firing event: FXGLEvent[type=EXIT]
+04:02:50.530 [JavaFX App] DEBUG FXGLEventBus         - Firing event: SaveEvent
+04:02:50.531 [JavaFX App] DEBUG FXGLInput            - Saving data to profile
+04:02:50.531 [JavaFX App] DEBUG Bundle               - Logging bundle: input
+04:02:50.531 [JavaFX App] DEBUG Bundle               - input.Screenshot=P
+04:02:50.531 [JavaFX App] DEBUG Bundle               - input.right=D
+04:02:50.531 [JavaFX App] DEBUG Bundle               - input.Developer Options=0
+04:02:50.531 [JavaFX App] DEBUG Bundle               - input.left=A
+04:02:50.531 [JavaFX App] DEBUG FXGLDisplay          - Saving data to profile
+04:02:50.531 [JavaFX App] DEBUG Bundle               - Logging bundle: scene
+04:02:50.531 [JavaFX App] DEBUG Bundle               - scene.sizeW=1280.0
+04:02:50.531 [JavaFX App] DEBUG Bundle               - scene.sizeH=720.0
+04:02:50.531 [JavaFX App] DEBUG FXGLAudioPlayer      - Saving data to profile
+04:02:50.531 [JavaFX App] DEBUG Bundle               - Logging bundle: audio
+04:02:50.532 [JavaFX App] DEBUG Bundle               - audio.musicVolume=0.5
+04:02:50.532 [JavaFX App] DEBUG Bundle               - audio.soundVolume=0.5
+04:02:50.532 [JavaFX App] DEBUG AchievementManager   - Saving data to profile
+04:02:50.532 [JavaFX App] DEBUG Bundle               - Logging bundle: achievement
+04:02:50.532 [JavaFX App] DEBUG FXGLMasterTimer      - Saving data to profile
+04:02:50.532 [JavaFX App] DEBUG Bundle               - Logging bundle: timer
+04:02:50.532 [JavaFX App] DEBUG Bundle               - timer.playtime=371472720976
+04:02:50.533 [JavaFX App] DEBUG SaveLoadManager      - Saving profile: 1
+04:02:50.536 [JavaFX App] DEBUG IOTask               - Executing task: writeDataTask(./profiles/1/user.profile)
+04:02:50.536 [JavaFX App] DEBUG IOTask               - Executing task: writeDataTask(./profiles/1/user.profile)
+04:02:50.540 [JavaFX App] DEBUG FS                   - Writing to: .\profiles\1\user.profile
+04:02:50.548 [JavaFX App] DEBUG IOTask               - Executing task: checkSavesDir(./profiles/1/saves/)
+04:02:50.549 [JavaFX App] DEBUG IOTask               - Task succeeded: writeDataTask(./profiles/1/user.profile)

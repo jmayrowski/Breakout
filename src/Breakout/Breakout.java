@@ -10,6 +10,7 @@ import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.entity.GameEntity;
 import com.almasb.fxgl.entity.component.CollidableComponent;
+import com.almasb.fxgl.entity.component.TypeComponent;
 import com.almasb.fxgl.input.ActionType;
 import com.almasb.fxgl.input.Input;
 import com.almasb.fxgl.input.InputMapping;
@@ -167,11 +168,12 @@ public class Breakout extends GameApplication{
         //physicsManager.setGravity(0,0);
         //Wall wall = new Wall();
         //wall.initWalls();
-        initWalls();
+        //initWalls();
         initBat();
         initBall();
         initBrick();
         initBackground();
+        initScreenBounds();
 
 
 
@@ -181,6 +183,8 @@ public class Breakout extends GameApplication{
     protected void initPhysics() {
         //Kollisionsabfrage zw. Ball und Brick
         PhysicsWorld physics = getPhysicsWorld();
+
+        //physics.setGravity(0,0);
         physics.addCollisionHandler(new CollisionHandler(Type.BALL, Type.BRICK) {
             @Override
             public void onCollisionBegin(Entity a, Entity b) {
@@ -373,11 +377,14 @@ public class Breakout extends GameApplication{
         ballPhysics = new PhysicsComponent();
         ballPhysics.setBodyType(BodyType.DYNAMIC);
 
+
         FixtureDef fd = new FixtureDef();
         fd.setRestitution(0.8f);
         fd.setShape(new CircleShape());
         fd.getShape().setRadius(13);
         ballPhysics.setFixtureDef(fd);
+
+
 
         ball.addComponent(ballPhysics);
 
@@ -403,16 +410,17 @@ public class Breakout extends GameApplication{
 
     }
 
-    private void initBrick(){
+    private void initBrick() {
 
-        BoundingShape Box = box(92,42);
-        GameEntity brick = new GameEntity();
-        //for (int i = 0; i < 60; i++){
+        BoundingShape Box = box(92, 42);
 
+        for (int i = 0; i < 12; i++) {
+
+            GameEntity brick = new GameEntity();
             brick.getTypeComponent().setValue(Type.BRICK);
-            //brick.getPositionComponent().setValue((i % 11) *100 + 95, (i / 16)* 45 + 30);
-            brick.getPositionComponent().setValue(getWidth()/2,100);
-            brick.getMainViewComponent().setTexture("Bricks/brick_blue_small.png",true);
+            brick.getPositionComponent().setValue((i % 11) *100 + 95, (i / 16)* 45 + 30);
+            //brick.getPositionComponent().setValue(getWidth() / 2, 100);
+            brick.getMainViewComponent().setTexture("Bricks/brick_blue_small.png", true);
             brick.getBoundingBoxComponent().addHitBox(new HitBox("BrickHitBox", Box));
             brick.addComponent(new CollidableComponent(true));
 
@@ -426,8 +434,15 @@ public class Breakout extends GameApplication{
 
             addEntities(brick);*/
         }
+    }
 
+    private void initScreenBounds() {
+        Entity walls = Entities.makeScreenBounds(150);
+        walls.addComponent(new TypeComponent(Type.WALL));
+        walls.addComponent(new CollidableComponent(true));
 
+        getGameWorld().addEntity(walls);
+    }
     @Override
     protected void onUpdate(double tpf) {
 
