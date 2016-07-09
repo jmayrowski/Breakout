@@ -14,6 +14,7 @@ public class BallControl extends AbstractControl {
 
     @Override
     public void onAdded(Entity entity) {
+
         ball = entity.getComponentUnsafe(PhysicsComponent.class);
     }
 

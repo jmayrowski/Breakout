@@ -27,13 +27,13 @@ public class BatControl extends AbstractControl {
 
     public void left() {
 
-            bat.setLinearVelocity(-5, 0);
+            bat.setLinearVelocity(-10, 0);
 
     }
 
     public void right() {
 
-            bat.setLinearVelocity(5, 0);
+            bat.setLinearVelocity(10, 0);
 
     }
 
