@@ -38,8 +38,8 @@ public class PlayField {
         brick7 = bf.initBrick(7,0);
         brick8 = bf.initBrick(8,0);
         brick9 = bf.initBrick(9,0);
-        brick10 = bf.initBrick(12,5);
-        brick11 = bf.initBrick(13,3);
+        brick10 = bf.initBrick(83,5);
+        brick11 = bf.initBrick(60,3);
 
 
         ArrayList<GameEntity> playField = new ArrayList<GameEntity>();

@@ -63,7 +63,7 @@ public class BrickFactory {
 
         BoundingShape Box = BoundingShape.box(90,40);
 
-        Point2D p = new Point2D((position % 12) * 100 + 95, (position / 16) * 45 + 30);
+        Point2D p = new Point2D((position % 11) * 100 + 95, (position / 16) * 45 + 30);
 
         brick = Entities.builder()
                 .type(Breakout.Type.BRICK)
